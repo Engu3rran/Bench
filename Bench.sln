@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bench.TestsUnitaires", "Ben
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bench.EntrepotPersistance.Mock", "Bench.EntrepotPersistance.Mock\Bench.EntrepotPersistance.Mock.csproj", "{31B981F1-BBDD-4136-8EF5-E1F29566004B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bench.EntrepotPersistance.PostGresSQL", "Bench.EntrepotPersistance.PosGresSQL\Bench.EntrepotPersistance.PostGresSQL.csproj", "{E8058F61-9406-44E0-8437-943C1736EA49}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{31B981F1-BBDD-4136-8EF5-E1F29566004B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{31B981F1-BBDD-4136-8EF5-E1F29566004B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{31B981F1-BBDD-4136-8EF5-E1F29566004B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8058F61-9406-44E0-8437-943C1736EA49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8058F61-9406-44E0-8437-943C1736EA49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8058F61-9406-44E0-8437-943C1736EA49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8058F61-9406-44E0-8437-943C1736EA49}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

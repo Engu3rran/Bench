@@ -17,18 +17,6 @@ namespace Bench
             Répétition = RepetitionVoie.Aucune;
         }
 
-        public NumeroVoie(int numéro)
-        {
-            Numéro = numéro;
-            Répétition = RepetitionVoie.Aucune;
-        }
-
-        public NumeroVoie(int numéro, RepetitionVoie répétition)
-        {
-            Numéro = numéro;
-            Répétition = répétition;
-        }
-
         public int Numéro { get; set; }
         public RepetitionVoie Répétition {get; set;}
 

@@ -4,6 +4,6 @@ namespace Bench
 {
     public interface IEntite
     {
-        Guid Id { get; set; }
+        Guid Id { get; }
     }
 }
