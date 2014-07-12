@@ -50,6 +50,8 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="Domaine\TestCommune.cs" />
+    <Compile Include="Domaine\TestRue.cs" />
     <Compile Include="Persistance\TestEntrepotPersistanceMock.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -1,7 +1,7 @@
 ﻿
 namespace Bench
 {
-    public enum RepetitionRue
+    public enum RepetitionVoie
     {
         Aucune,
         Bis,

@@ -42,6 +42,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CQRS\Bus.cs" />
+    <Compile Include="CQRS\BusException.cs" />
+    <Compile Include="CQRS\IInstructionBus.cs" />
+    <Compile Include="CQRS\IMessageBus.cs" />
     <Compile Include="DDD\Agregat\Agregat.cs" />
     <Compile Include="DDD\Agregat\IAgregat.cs" />
     <Compile Include="DDD\Entites\Entite.cs" />
@@ -55,10 +59,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Communes\CodeCommune.cs" />
     <Compile Include="Communes\Commune.cs" />
-    <Compile Include="Voirie\NomRue.cs" />
-    <Compile Include="Voirie\NumeroRue.cs" />
-    <Compile Include="Voirie\RepetitionRue.cs" />
-    <Compile Include="Voirie\Rue.cs" />
+    <Compile Include="Voirie\NomVoie.cs" />
+    <Compile Include="Voirie\NumeroVoie.cs" />
+    <Compile Include="Voirie\RepetitionVoie.cs" />
+    <Compile Include="Voirie\Voie.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
