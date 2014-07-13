@@ -10,7 +10,10 @@ namespace Bench.EntrepotPersistance.PostGresSQL
             Table("COMMUNE");
             Id(x => x.Id, "ID").GeneratedBy.GuidComb();
             Map(x => x.Nom, "NOM");
-            Map(x => x.Code._valeur, "CODE");
+            Component(x => x.Code, code =>
+            {
+                code.Map(Reveal.Member<CodeCommune>("_valeur"), "CODE");
+            });
         }
     }
 }

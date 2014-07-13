@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bench.EntrepotPersistance.M
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bench.EntrepotPersistance.PostGresSQL", "Bench.EntrepotPersistance.PosGresSQL\Bench.EntrepotPersistance.PostGresSQL.csproj", "{E8058F61-9406-44E0-8437-943C1736EA49}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bench.TestsIntegration", "Bench.TestsIntegration\Bench.TestsIntegration.csproj", "{B49CF917-2330-4305-8114-DBCDB358B020}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{E8058F61-9406-44E0-8437-943C1736EA49}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E8058F61-9406-44E0-8437-943C1736EA49}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E8058F61-9406-44E0-8437-943C1736EA49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B49CF917-2330-4305-8114-DBCDB358B020}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B49CF917-2330-4305-8114-DBCDB358B020}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B49CF917-2330-4305-8114-DBCDB358B020}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B49CF917-2330-4305-8114-DBCDB358B020}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

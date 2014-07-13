@@ -8,7 +8,7 @@ namespace Bench.EntrepotPersistance.PostGresSQL
         public VoieMapping()
         {
             Table("VOIE");
-            Id(x => x.Id, "ID");
+            Id(x => x.Id, "ID").GeneratedBy.GuidComb();
             Component(x => x.Nom, nom =>
             {
                 nom.Map(x => x.Type, "TYPE");
@@ -16,7 +16,7 @@ namespace Bench.EntrepotPersistance.PostGresSQL
             });
             HasMany(x => x.Numéros)
                 .KeyColumn("ID_VOIE")
-                .Cascade.All();
+                .Cascade.AllDeleteOrphan();
             Map(x => x.IdCommune, "ID_COMMUNE");
         }
     }

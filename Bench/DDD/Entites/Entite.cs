@@ -8,10 +8,7 @@ namespace Bench
 
         public Guid Id { get; private set; }
 
-        public Entite() 
-        {
-            Id = Guid.NewGuid();
-        }
+        public Entite() { }
 
         public void définirUnEntrepotDePersistance(IEntrepotPersistance nouvelEntrepot)
         {

@@ -9,6 +9,11 @@ namespace Bench
         private const int NOMBRE_NUMEROS_RUE_MAX = 20;
         private static readonly Random _hasard = new Random();
 
+        public Voie() : base()
+        {
+            Numéros = new List<NumeroVoie>();
+        }
+
         public IList<NumeroVoie> Numéros { get; set; }
         public NomVoie Nom { get; set; }
         public Guid IdCommune { get; set; }
@@ -16,7 +21,7 @@ namespace Bench
         public void initialiserAléatoirement(Commune[] communes)
         {
             int nombreDeNumérosDeRue = _hasard.Next(NOMBRE_NUMEROS_RUE_MIN, NOMBRE_NUMEROS_RUE_MAX);
-            Numéros = new List<NumeroVoie>();
+            Numéros.Clear();
             for (var i = 0; i < nombreDeNumérosDeRue; i++)
             {
                 NumeroVoie numéro = new NumeroVoie();

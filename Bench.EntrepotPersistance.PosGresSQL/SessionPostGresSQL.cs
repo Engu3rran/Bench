@@ -25,7 +25,7 @@ namespace Bench.EntrepotPersistance.PostGresSQL
 
         private static string récupérerLaChaîneDeConnexion()
         {
-            return ConfigurationManager.ConnectionStrings[CLE_CHAINE_CONNEXION_POSGRESSQL].ConnectionString;
+            return ConfigurationManager.AppSettings[CLE_CHAINE_CONNEXION_POSGRESSQL];
         }
 
         private static ISessionFactory initialiserLaFabrique()
@@ -33,11 +33,13 @@ namespace Bench.EntrepotPersistance.PostGresSQL
             return Fluently.Configure()
               .Database(
                 PostgreSQLConfiguration
-                    .Standard
+                    .PostgreSQL82
                     .ConnectionString(récupérerLaChaîneDeConnexion())
               )
               .Mappings(m =>
-                m.FluentMappings.AddFromAssembly(Assembly.GetExecutingAssembly()))
+                m.FluentMappings
+                    .AddFromAssembly(Assembly.GetExecutingAssembly())
+                    .Conventions.Add(FluentNHibernate.Conventions.Helpers.DefaultLazy.Never()))
               .BuildSessionFactory();
         }
 
