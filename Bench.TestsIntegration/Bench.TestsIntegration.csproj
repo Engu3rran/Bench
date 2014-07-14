@@ -56,7 +56,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="Persistance\PostGresSQL\TestPostGresSQL.cs" />
+    <Compile Include="Persistance\TestPersistance.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -69,6 +69,10 @@
     <ProjectReference Include="..\Bench.EntrepotPersistance.Mock\Bench.EntrepotPersistance.Mock.csproj">
       <Project>{31b981f1-bbdd-4136-8ef5-e1f29566004b}</Project>
       <Name>Bench.EntrepotPersistance.Mock</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Bench.EntrepotPersistance.MongoDB\Bench.EntrepotPersistance.MongoDB.csproj">
+      <Project>{cc966db7-9ce9-47da-8a22-171709985941}</Project>
+      <Name>Bench.EntrepotPersistance.MongoDB</Name>
     </ProjectReference>
     <ProjectReference Include="..\Bench.EntrepotPersistance.PosGresSQL\Bench.EntrepotPersistance.PostGresSQL.csproj">
       <Project>{e8058f61-9406-44e0-8437-943c1736ea49}</Project>

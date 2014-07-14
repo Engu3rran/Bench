@@ -27,7 +27,6 @@ namespace Bench.TestsUnitaires.Domaine
             Assert.IsFalse(string.IsNullOrEmpty(rue1.Nom.Type));
             Assert.IsFalse(string.IsNullOrEmpty(rue1.Nom.Libellé));
             Assert.IsNotNull(rue1.IdCommune);
-            Assert.AreNotEqual(new Guid(), rue1.IdCommune);
             Assert.IsFalse(rue1.Nom.Libellé == rue2.Nom.Libellé
                 && rue1.Nom.Type == rue2.Nom.Type
                 && rue1.Numéros.Count == rue2.Numéros.Count

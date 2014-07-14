@@ -9,13 +9,13 @@ namespace Bench.EntrepotPersistance.PostGresSQL
     public class SessionPostGresSQL
     {
         private const string CLE_CHAINE_CONNEXION_POSGRESSQL = "connectionStringPG";
-        private static readonly ISessionFactory _fabriqueSession = initialiserLaFabrique();
+        private static readonly ISessionFactory _baseDeDonnéesPostGres = seConnecterALaBaseDeDonnées();
 
         private ISession _sessionNhibernate;
 
         public SessionPostGresSQL()
         {
-            _sessionNhibernate = _fabriqueSession.OpenSession();
+            _sessionNhibernate = _baseDeDonnéesPostGres.OpenSession();
         }
 
         public ISession donnerLaSession()
@@ -28,7 +28,7 @@ namespace Bench.EntrepotPersistance.PostGresSQL
             return ConfigurationManager.AppSettings[CLE_CHAINE_CONNEXION_POSGRESSQL];
         }
 
-        private static ISessionFactory initialiserLaFabrique()
+        private static ISessionFactory seConnecterALaBaseDeDonnées()
         {
             return Fluently.Configure()
               .Database(

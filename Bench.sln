@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bench.EntrepotPersistance.P
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bench.TestsIntegration", "Bench.TestsIntegration\Bench.TestsIntegration.csproj", "{B49CF917-2330-4305-8114-DBCDB358B020}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bench.EntrepotPersistance.MongoDB", "Bench.EntrepotPersistance.MongoDB\Bench.EntrepotPersistance.MongoDB.csproj", "{CC966DB7-9CE9-47DA-8A22-171709985941}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{B49CF917-2330-4305-8114-DBCDB358B020}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B49CF917-2330-4305-8114-DBCDB358B020}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B49CF917-2330-4305-8114-DBCDB358B020}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC966DB7-9CE9-47DA-8A22-171709985941}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC966DB7-9CE9-47DA-8A22-171709985941}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC966DB7-9CE9-47DA-8A22-171709985941}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC966DB7-9CE9-47DA-8A22-171709985941}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
