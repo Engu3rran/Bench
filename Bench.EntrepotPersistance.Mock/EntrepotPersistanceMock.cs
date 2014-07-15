@@ -34,6 +34,8 @@ namespace Bench.EntrepotPersistance.Mock
         {
             try
             {
+                if (entité.Id == new Guid())
+                    entité.Id = Guid.NewGuid();
                 string nomDeLaCollection = trouverLeNomDeLaCollectionCorrespondante<T>();
                 if (!_collections.ContainsKey(nomDeLaCollection))
                     _collections.Add(nomDeLaCollection, new List<IEntite>());

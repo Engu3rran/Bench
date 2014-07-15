@@ -4,12 +4,24 @@ namespace Bench
 {
     public abstract class ObjetValeur
     {
-        protected internal string _valeur;
+        protected string _valeur;
 
 
         public ObjetValeur(string valeur)
         {
             _valeur = valeur;
+        }
+
+        public string Valeur
+        {
+            get
+            {
+                return _valeur;
+            }
+            protected set
+            {
+                _valeur = value;
+            }
         }
 
 

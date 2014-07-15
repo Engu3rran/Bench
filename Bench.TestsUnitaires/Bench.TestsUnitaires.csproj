@@ -50,12 +50,17 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="Commandes\TestCommandes.cs" />
     <Compile Include="Domaine\TestCommune.cs" />
     <Compile Include="Domaine\TestRue.cs" />
     <Compile Include="Persistance\TestEntrepotPersistanceMock.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Bench.Commandes\Bench.Commandes.csproj">
+      <Project>{75003360-b529-416f-8156-65541568087b}</Project>
+      <Name>Bench.Commandes</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Bench.EntrepotPersistance.Mock\Bench.EntrepotPersistance.Mock.csproj">
       <Project>{31b981f1-bbdd-4136-8ef5-e1f29566004b}</Project>
       <Name>Bench.EntrepotPersistance.Mock</Name>

@@ -14,8 +14,12 @@ namespace Bench.EntrepotPersistance.PostGresSQL
                 nom.Map(x => x.Type, "TYPE");
                 nom.Map(x => x.Libellé, "LIBELLE");
             });
-            HasMany(x => x.Numéros)
-                .KeyColumn("ID_VOIE")
+            HasManyToMany(x => x.Numéros)
+                .Table("VOIE_NUMERO_VOIE")
+                .ParentKeyColumns
+                    .Add("ID_VOIE")
+                .ChildKeyColumns
+                    .Add("ID_NUMERO_VOIE")
                 .Cascade.AllDeleteOrphan();
             Map(x => x.IdCommune, "ID_COMMUNE");
         }

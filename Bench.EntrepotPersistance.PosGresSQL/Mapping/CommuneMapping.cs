@@ -12,7 +12,7 @@ namespace Bench.EntrepotPersistance.PostGresSQL
             Map(x => x.Nom, "NOM");
             Component(x => x.Code, code =>
             {
-                code.Map(Reveal.Member<CodeCommune>("_valeur"), "CODE");
+                code.Map(x => x.Valeur, "CODE");
             });
         }
     }

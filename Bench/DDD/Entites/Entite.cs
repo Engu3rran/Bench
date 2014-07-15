@@ -6,7 +6,7 @@ namespace Bench
     {
         protected IEntrepotPersistance _entrepot;
 
-        public Guid Id { get; private set; }
+        public Guid Id { get; set; }
 
         public Entite() { }
 
