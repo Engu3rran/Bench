@@ -7,22 +7,22 @@ using NHibernate.Linq;
 
 namespace Bench.EntrepotPersistance.PostGresSQL
 {
-    public class EntrepotPostGresSQL : IEntrepotPersistance
+    public class EntrepotPostGresSQL : IEntrepotReporting
     {
-        ISession _sessionNhibernate;
+        ISession _session;
 
         public EntrepotPostGresSQL(SessionPostGresSQL PostGres)
         {
-            _sessionNhibernate = PostGres.donnerLaSession();
+            _session = PostGres.donnerLaSession();
         }
 
         public void enregistrer<T>(T entité) where T : IEntite
         {
             try
             {
-                using (ITransaction transaction = _sessionNhibernate.BeginTransaction())
+                using (ITransaction transaction = _session.BeginTransaction())
                 {
-                    _sessionNhibernate.SaveOrUpdate(entité);
+                    _session.SaveOrUpdate(entité);
                     transaction.Commit();
                 }
             }
@@ -36,9 +36,9 @@ namespace Bench.EntrepotPersistance.PostGresSQL
         {
             try
             {
-                using (ITransaction transaction = _sessionNhibernate.BeginTransaction())
+                using (ITransaction transaction = _session.BeginTransaction())
                 {
-                    _sessionNhibernate.Delete(entité);
+                    _session.Delete(entité);
                     transaction.Commit();
                 }
             }
@@ -51,7 +51,7 @@ namespace Bench.EntrepotPersistance.PostGresSQL
 
         public IQueryable<T> donnerLaCollection<T>() where T : IEntite
         {
-            return _sessionNhibernate.Query<T>();
+            return _session.Query<T>();
         }
     }
 }

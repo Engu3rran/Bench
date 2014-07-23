@@ -40,13 +40,22 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BusCommande.cs" />
-    <Compile Include="CreerVoies\CreerVoiesCommande.cs" />
-    <Compile Include="CreerVoies\ICreerVoiesMessage.cs" />
+    <Compile Include="CreerCommunes\CreerCommuneCommande.cs" />
+    <Compile Include="CreerCommunes\CreerCommuneReportingCommande.cs" />
+    <Compile Include="CreerCommunes\ICreerCommuneMessage.cs" />
+    <Compile Include="CreerCommunes\ICreerCommuneReportingMessage.cs" />
+    <Compile Include="CreerVoies\CreerVoieCommande.cs" />
+    <Compile Include="CreerVoies\CreerVoieEntrepotCommande.cs" />
+    <Compile Include="CreerVoies\CreerVoieReportingCommande.cs" />
+    <Compile Include="CreerVoies\ICreerVoieEntrepotMessage.cs" />
+    <Compile Include="CreerVoies\ICreerVoieMessage.cs" />
+    <Compile Include="CreerVoies\ICreerVoieReportingMessage.cs" />
+    <Compile Include="Evenement.cs" />
     <Compile Include="IMessageCommande.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReponseCommande.cs" />
-    <Compile Include="SupprimerVoies\ISupprimerVoiesMessage.cs" />
-    <Compile Include="SupprimerVoies\SupprimerVoiesCommande.cs" />
+    <Compile Include="SupprimerVoies\ISupprimerVoirieMessage.cs" />
+    <Compile Include="SupprimerVoies\SupprimerVoirieCommande.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Bench\Bench.csproj">

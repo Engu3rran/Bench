@@ -38,6 +38,10 @@
     <Reference Include="Mono.Security">
       <HintPath>..\packages\Npgsql.2.1.3\lib\net45\Mono.Security.dll</HintPath>
     </Reference>
+    <Reference Include="Ninject, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Ninject.3.2.2.0\lib\net45-full\Ninject.dll</HintPath>
+    </Reference>
     <Reference Include="Npgsql">
       <HintPath>..\packages\Npgsql.2.1.3\lib\net45\Npgsql.dll</HintPath>
     </Reference>
@@ -56,9 +60,9 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="ScenarioBench.cs" />
     <Compile Include="Persistance\TestPersistance.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestIntegration.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config">

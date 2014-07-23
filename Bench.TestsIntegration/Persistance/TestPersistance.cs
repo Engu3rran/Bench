@@ -6,7 +6,7 @@ using Bench.EntrepotPersistance.MongoDB;
 namespace Bench.TestsIntegration
 {
     [TestClass]
-    public class TestPersistance
+    public class TestPersistance : TestIntegration
     {
         [TestMethod]
         public void TestPersistance_CRUDCommunePostGresSQL()

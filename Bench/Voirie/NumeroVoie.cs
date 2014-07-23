@@ -35,7 +35,9 @@ namespace Bench
 
         private string donnerLeLibelléDeLaRépétition(RepetitionVoie répétition)
         {
-            return _dictionnaireDesRépétitions[répétition];
+            if(_dictionnaireDesRépétitions.ContainsKey(répétition))
+                return _dictionnaireDesRépétitions[répétition];
+            return string.Empty;
         }
 
         private static Dictionary<RepetitionVoie, string> _dictionnaireDesRépétitions = new Dictionary<RepetitionVoie, string>()

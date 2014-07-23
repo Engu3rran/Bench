@@ -13,7 +13,6 @@ namespace Bench
 
         protected void chargerLaListeDesInstruction(Assembly assembly)
         {
-            var test = assembly.GetTypes().Where(x => x.GetInterfaces().Any(y => y == typeof(IInstructionBus)));
             _listeDesInstructions = assembly
                 .GetTypes()
                 .Where(x => x

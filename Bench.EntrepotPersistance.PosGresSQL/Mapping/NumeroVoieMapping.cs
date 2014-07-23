@@ -8,7 +8,7 @@ namespace Bench.EntrepotPersistance.PostGresSQL
         public NumeroVoieMapping()
         {
             Table("NUMERO_VOIE");
-            Id(x => x.Id, "ID").GeneratedBy.GuidComb();
+            Id(x => x.Id, "ID").GeneratedBy.Assigned();
             Map(x => x.Numéro, "NUMERO");
             Map(x => x.Répétition, "REPETITION").CustomType<int>();
         }

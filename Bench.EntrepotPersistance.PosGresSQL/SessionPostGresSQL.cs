@@ -11,16 +11,17 @@ namespace Bench.EntrepotPersistance.PostGresSQL
         private const string CLE_CHAINE_CONNEXION_POSGRESSQL = "connectionStringPG";
         private static readonly ISessionFactory _baseDeDonnéesPostGres = seConnecterALaBaseDeDonnées();
 
-        private ISession _sessionNhibernate;
+        //private ISession _sessionNhibernate;
 
         public SessionPostGresSQL()
         {
-            _sessionNhibernate = _baseDeDonnéesPostGres.OpenSession();
+            //_sessionNhibernate = _baseDeDonnéesPostGres.OpenSession();
         }
 
         public ISession donnerLaSession()
         {
-            return _sessionNhibernate;
+            //return _sessionNhibernate;
+            return _baseDeDonnéesPostGres.OpenSession();
         }
 
         private static string récupérerLaChaîneDeConnexion()

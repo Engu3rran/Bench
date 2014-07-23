@@ -4,11 +4,14 @@ namespace Bench
 {
     public abstract class Entite<T> : IEntite where T : Entite<T>
     {
-        protected IEntrepotPersistance _entrepot;
+        protected IEntrepotPersistance _entrepot = FabriqueGenerique.constuire<IEntrepotPersistance>();
 
         public Guid Id { get; set; }
 
-        public Entite() { }
+        public Entite() 
+        {
+            Id = Guid.NewGuid();
+        }
 
         public void définirUnEntrepotDePersistance(IEntrepotPersistance nouvelEntrepot)
         {

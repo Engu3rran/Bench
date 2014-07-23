@@ -5,7 +5,7 @@ using System.Reflection;
 
 namespace Bench.EntrepotPersistance.Mock
 {
-    public class EntrepotPersistanceMock : IEntrepotPersistance
+    public class EntrepotPersistanceMock : IEntrepotPersistance, IEntrepotReporting
     {
         private IDictionary<string, IList<IEntite>> _collections;
 

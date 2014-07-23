@@ -6,7 +6,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace Bench.TestsUnitaires.Domaine
 {
     [TestClass]
-    public class TestVoie
+    public class TestVoie : TestUnitaire
     {
         [TestMethod]
         public void TestRue_peutGénérerDesRuesAléatoirement()

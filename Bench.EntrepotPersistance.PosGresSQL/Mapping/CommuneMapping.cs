@@ -8,7 +8,7 @@ namespace Bench.EntrepotPersistance.PostGresSQL
         public CommuneMapping()
         {
             Table("COMMUNE");
-            Id(x => x.Id, "ID").GeneratedBy.GuidComb();
+            Id(x => x.Id, "ID").GeneratedBy.Assigned();
             Map(x => x.Nom, "NOM");
             Component(x => x.Code, code =>
             {

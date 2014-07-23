@@ -55,6 +55,7 @@
     <Compile Include="DDD\Fabrique\FabriqueGenerique.cs" />
     <Compile Include="DDD\ObjetsValeur\ObjetValeur.cs" />
     <Compile Include="DDD\Persistance\IEntrepotPersistance.cs" />
+    <Compile Include="DDD\Persistance\IEntrepotReporting.cs" />
     <Compile Include="DDD\Persistance\PersistanceException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Communes\CodeCommune.cs" />

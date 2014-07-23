@@ -20,7 +20,7 @@ namespace Bench
             }
         }
 
-        public static void configurerLInjectionDeDépendance(NinjectModule module)
+        public static void configurer(NinjectModule module)
         {
             _configuration = new StandardKernel(module);
         }

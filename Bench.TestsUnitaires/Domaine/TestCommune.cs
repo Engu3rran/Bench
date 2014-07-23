@@ -4,7 +4,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace Bench.TestsUnitaires.Domaine
 {
     [TestClass]
-    public class TestCommune
+    public class TestCommune : TestUnitaire
     {
         [TestMethod]
         public void TestCommune_peutGénérerUneCommuneAvecUnCodeAléatoire()

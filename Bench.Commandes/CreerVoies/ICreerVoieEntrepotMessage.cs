@@ -1,7 +1,7 @@
 ﻿
 namespace Bench.Commandes
 {
-    public interface ISupprimerVoiesMessage : IMessageCommande
+    public interface ICreerVoieEntrepotMessage : IMessageCommande
     {
         IEntrepotPersistance Entrepot { get; }
     }

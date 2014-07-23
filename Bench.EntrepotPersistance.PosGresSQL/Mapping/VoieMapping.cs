@@ -8,7 +8,7 @@ namespace Bench.EntrepotPersistance.PostGresSQL
         public VoieMapping()
         {
             Table("VOIE");
-            Id(x => x.Id, "ID").GeneratedBy.GuidComb();
+            Id(x => x.Id, "ID").GeneratedBy.Assigned();
             Component(x => x.Nom, nom =>
             {
                 nom.Map(x => x.Type, "TYPE");
